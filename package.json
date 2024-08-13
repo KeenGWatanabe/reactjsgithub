@@ -12,14 +12,17 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+
     "predeploy": "npm run build-react-scripts",
     "deploy": "gh-pages -d build",
     "build-react-scripts": "react-scripts build",
     "build-react-scripts-dev": "react-scripts --max_old_space_size=8192 build",
     "build-react-scripts-prod": "react-scripts build --mode=production",
     "build-react-scripts-prod-min": "react-scripts build --mode=production --production --minimize",
-    "build": "react-scripts build",
+
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
