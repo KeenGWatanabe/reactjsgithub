@@ -3,8 +3,8 @@ const Navbar =()=>{
       return (
             <div>
                   <Link to="/">Home</Link><br />
-                  <Link to="/about">About</Link><br />
-                  <Link to="/careers">Careers</Link>
+                  <Link to="./About">About</Link><br />
+                  <Link to="./Careers">Careers</Link>
             </div>
       )
 }
